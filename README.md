@@ -20,10 +20,7 @@ Required:
 - Angular 17,
 - Angluar Cli,
 - Tailwindcss,
-- Angular Material,
-- Highchart,
-- REST API,
-- RxJS,
+- REST API
 
 ### Install TailwindCSS:
 
@@ -50,3 +47,11 @@ styles.css:
 @tailwind components;
 @tailwind utilities;```
 ````
+
+### Packages needed to be installed:
+
+To install the following packages follow their respective documentations
+
+- RxJS,
+- Angular Material,
+- Highchart
