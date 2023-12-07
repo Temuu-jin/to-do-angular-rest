@@ -16,4 +16,13 @@ export class UserService {
   getUser(id: number): Observable<User> {
     return this.http.get<User>(`${this.apiUrl}/users/${id}`);
   }
+  createUser(user: User): Observable<User> {
+    return this.http.post<User>(`${this.apiUrl}/users`, user);
+  }
+  updateUser(user: User): Observable<User> {
+    return this.http.patch<User>(`${this.apiUrl}/users/${user.id}`, user);
+  }
+  deleteUser(id: number): Observable<unknown> {
+    return this.http.delete<User>(`${this.apiUrl}/users/${id}`);
+  }
 }
